@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("https://th.bing.com/th/id/OIP.TGRdkFM_ZKzQ8QYT-n83wgHaFj?pid=ImgDet&rs=1");
+  text-align: center;
+    padding: 20px;
+    font-size: larger;
+    font-family: cursive;
+    font-style: oblique;
+}
+
+.container {
+  margin-top: 100px;
+}
+
+h1 {
+     color: brown;
+    box-shadow: 2px 2px 5px hotpink;
+}
+
+input[type="text"] {
+ padding: 10px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 15px;
+    color: black;
+    font-style: oblique;
+    box-shadow: 0px 3px 2px 2px;
+}
+
+button {
+padding: 10px 20px;
+    background-color: azure;
+    color: black;
+    font-style: oblique;
+    border: 2px 5px 3px burlywood;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 3px 2px 2px;
+}
+
+.button:hover {
+  background-color: #002ead;
+  transition: 0.7s;
+}
+
+#weatherInfo {
+  margin-top: 20px;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Contact Form </title>
+	<style type="text/css">
+		body {
+			background-image: url("https://th.bing.com/th/id/R.42ff3056ad27f0c86701d55f436cee67?rik=Cf9olwBN%2fuGNVw&riu=http%3a%2f%2fwww.aacustomcrushing.com%2fwp-content%2fuploads%2f2014%2f03%2fContact-us-background.jpg&ehk=MPzWJlWnWkXKnHcbs%2fdgf8NNrOJSn%2fn1SZud2TzY%2fHw%3d&risl=&pid=ImgRaw&r=0");
+		}
+		.container {
+			width: 400px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		h1 {
+             color: burlywood;
+             box-shadow: 2px 2px 5px skyblue;
+}
+		input[type="text"], input[type="email"],textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			resize: vertical;
+		}
+		input[type="submit"]:hover {
+			background-color: #45a049;
+		}
+		.form-success {
+			color: green;
+		}
+	
+		label {
+			display: block;
+			margin-bottom: 5px;
+		}
+		input, textarea {
+			width: 100%;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			resize: vertical;
+		}
+		textarea {
+			height: 100px;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 10px;
+			cursor: pointer;
+		}
+		button:hover {
+			background-color: #45a049;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+	<marquee> <h1> Contact US </h1> </marquee>
+		<form action="ContactForm.html" method="POST">
+			<label for="name"> Name </label>
+			<input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+			<label for="email"> Email </label>
+			<input type="text" id="email" name="email" placeholder="Enter your email" required>
+
+			<label for="message"> Message </label>
+			<textarea type="text" id="message" name="message" placeholder="Write something here.." required> </textarea>
+
+			<input type="submit" value="Submit">
+		</form>
+		<p class="form-success" style="display: none;"> Form Submitted Successfully !!!! </p>
+	</div>
+
+	<script type="text/javascript">
+		const form = document.querySelector('form');
+		const successMessage = document.querySelector('form-success');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			successMessage.style.display = 'block';
+			form.reset();
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+    color: coral;
+    font-style: oblique;
+    font-stretch: ultra-expanded;
+}
+
+#countdown {
+  font-size: 40px;
+  margin-top: 50px;
+}
